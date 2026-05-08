@@ -19,7 +19,7 @@ Adds a button to any Reddit thread page - click it, the whole thread downloads a
 
 > Keep the folder where it is. Chrome reads the files from disk every time, so if you delete or move the folder the extension stops working.
 
-### 🔄 Updating after editing files
+### Updating after editing files
 
 If you modify the source, go back to `chrome://extensions/` and click the reload icon on the extension card.
 
