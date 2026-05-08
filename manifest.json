@@ -3,6 +3,8 @@
   "name": "Save Reddit Discussion",
   "version": "1.0.0",
   "description": "Save a Reddit thread (post + comments) to a text file",
+  "author": "Volodymyr Kozieiev",
+  "homepage_url": "https://github.com/vkjr/save-reddit-discussion-extension",
   "content_scripts": [
     {
       "matches": [

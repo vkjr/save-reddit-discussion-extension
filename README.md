@@ -1,17 +1,14 @@
-# Save Reddit Discussion
+# 💾 Save Reddit Discussion
 
 A tiny browser extension that adds a **Save Thread** button on Reddit comment pages. Click it and the post + all comments get saved to a `.txt` file on your computer, with comment nesting preserved as indentation.
 
-## What it does
+## ✨ What it does
 
-- Works on any Reddit thread page (`reddit.com/r/<sub>/comments/...` and `sh.reddit.com/r/<sub>/comments/...`)
-- Adds a small orange "Save Thread" button in the bottom-right corner
-- On click, parses the post (title, author, body) and every comment (author, score, depth) and downloads them as one plain-text file
-- Filename: `reddit-r-<subreddit>-<slug-of-title>.txt`
-- Skips AutoModerator comments
-- Indents replies by depth so the conversation tree is readable
+Adds a button to any Reddit thread page - click it, the whole thread downloads as a `.txt` file.
 
-## Install (Chrome / Edge / Brave / Arc / Opera)
+![Save Thread button](button.png)
+
+## 🧩 Install (Chrome / Edge / Brave / Arc / Opera)
 
 1. Download this repo: either `git clone` it or click **Code -> Download ZIP** on GitHub and unzip it.
 2. Open `chrome://extensions/` (or `edge://extensions/`, `brave://extensions/`, etc.).
@@ -22,11 +19,11 @@ A tiny browser extension that adds a **Save Thread** button on Reddit comment pa
 
 > Keep the folder where it is. Chrome reads the files from disk every time, so if you delete or move the folder the extension stops working.
 
-### Updating after editing files
+### 🔄 Updating after editing files
 
 If you modify the source, go back to `chrome://extensions/` and click the reload icon on the extension card.
 
-## Install (Firefox)
+## 🦊 Install (Firefox)
 
 1. Open `about:debugging#/runtime/this-firefox`.
 2. Click **Load Temporary Add-on**.
@@ -35,7 +32,7 @@ If you modify the source, go back to `chrome://extensions/` and click the reload
 
 > Firefox unloads temporary add-ons when the browser restarts, so you'll need to load it again next time. (Permanent install requires signing through addons.mozilla.org.)
 
-## Disable or uninstall
+## 🗑️ Disable or uninstall
 
 **Chromium browsers (Chrome / Edge / Brave / Arc / Opera):**
 
@@ -48,7 +45,7 @@ If you modify the source, go back to `chrome://extensions/` and click the reload
 
 - Open `about:debugging#/runtime/this-firefox` and click **Remove** next to the extension. It also unloads automatically when you close Firefox.
 
-## Privacy & safety
+## 🔒 Privacy & safety
 
 This extension is intentionally minimal. It:
 
@@ -60,14 +57,14 @@ This extension is intentionally minimal. It:
 
 You can read all of the source - it's three files (`manifest.json`, `content.js`, `styles.css`), under 200 lines total.
 
-## Usage
+## 🖱️ Usage
 
 1. Open any Reddit thread.
 2. Click the orange **Save Thread** button (bottom-right).
 3. The browser downloads a `.txt` file with the post and all comments.
 4. The button briefly turns green and shows how many comments were saved.
 
-## Output format
+## 📄 Output format
 
 ```
 # <post title>
@@ -88,12 +85,16 @@ top-level comment text
     reply to user2
 ```
 
-## Limitations
+## ⚠️ Limitations
 
 - Only saves comments currently rendered on the page. If the thread has hidden / collapsed branches or "load more comments" buttons that haven't been expanded, those won't be captured. Expand them before clicking Save.
 - Relies on Reddit's current `<shreddit-post>` / `<shreddit-comment>` elements (the new Reddit DOM). If Reddit changes their markup, the extension will need an update.
 - No support for old.reddit.com.
 
-## License
+## 👤 Author
+
+**Volodymyr Kozieiev** - [github.com/vkjr](https://github.com/vkjr)
+
+## 📜 License
 
 MIT
