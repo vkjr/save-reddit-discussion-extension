@@ -1,0 +1,33 @@
+.reddit-saver-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  background: #ff4500;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: background 0.2s;
+}
+
+.reddit-saver-btn:hover {
+  background: #e03d00;
+}
+
+.reddit-saver-btn--success {
+  background: #46d160;
+}
+
+.reddit-saver-btn--success:hover {
+  background: #3bc455;
+}

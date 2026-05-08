@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Save Reddit Discussion",
+  "version": "1.0.0",
+  "description": "Save a Reddit thread (post + comments) to a text file",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.reddit.com/r/*/comments/*",
+        "https://sh.reddit.com/r/*/comments/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
