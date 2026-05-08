@@ -11,18 +11,6 @@ A tiny browser extension that adds a **Save Thread** button on Reddit comment pa
 - Skips AutoModerator comments
 - Indents replies by depth so the conversation tree is readable
 
-## Privacy & safety
-
-This extension is intentionally minimal. It:
-
-- Requests **no host permissions** beyond running on Reddit thread pages
-- Has **no network access** - it does not fetch, send, or sync anything anywhere
-- Does **not read** cookies, storage, history, tabs, or any other browser data
-- Does **not modify** the Reddit page beyond adding one button
-- Only writes a local text file via the standard browser download flow
-
-You can read all of the source - it's three files (`manifest.json`, `content.js`, `styles.css`), under 200 lines total.
-
 ## Install (Chrome / Edge / Brave / Arc / Opera)
 
 1. Download this repo: either `git clone` it or click **Code -> Download ZIP** on GitHub and unzip it.
@@ -46,6 +34,18 @@ If you modify the source, go back to `chrome://extensions/` and click the reload
 4. Visit any Reddit thread - the button appears bottom-right.
 
 > Firefox unloads temporary add-ons when the browser restarts, so you'll need to load it again next time. (Permanent install requires signing through addons.mozilla.org.)
+
+## Privacy & safety
+
+This extension is intentionally minimal. It:
+
+- Requests **no host permissions** beyond running on Reddit thread pages
+- Has **no network access** - it does not fetch, send, or sync anything anywhere
+- Does **not read** cookies, storage, history, tabs, or any other browser data
+- Does **not modify** the Reddit page beyond adding one button
+- Only writes a local text file via the standard browser download flow
+
+You can read all of the source - it's three files (`manifest.json`, `content.js`, `styles.css`), under 200 lines total.
 
 ## Usage
 
