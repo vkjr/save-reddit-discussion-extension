@@ -35,6 +35,19 @@ If you modify the source, go back to `chrome://extensions/` and click the reload
 
 > Firefox unloads temporary add-ons when the browser restarts, so you'll need to load it again next time. (Permanent install requires signing through addons.mozilla.org.)
 
+## Disable or uninstall
+
+**Chromium browsers (Chrome / Edge / Brave / Arc / Opera):**
+
+1. Open `chrome://extensions/` (or `edge://extensions/`, etc.).
+2. Find the **Save Reddit Discussion** card.
+3. To **disable**: flip the toggle in the bottom-right of the card off. The button stops appearing on Reddit; flip it back on whenever you want.
+4. To **uninstall**: click **Remove** on the card, then confirm. After that you can also delete the extension folder from disk.
+
+**Firefox:**
+
+- Open `about:debugging#/runtime/this-firefox` and click **Remove** next to the extension. It also unloads automatically when you close Firefox.
+
 ## Privacy & safety
 
 This extension is intentionally minimal. It:
